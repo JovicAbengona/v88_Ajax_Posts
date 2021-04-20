@@ -17,7 +17,7 @@
 
         public function index_json(){
             $data = array();
-            $data["posts"] = $this->Quote->all();
+            $data["posts"] = $this->Post->all();
             echo json_encode($data);
         }
 
